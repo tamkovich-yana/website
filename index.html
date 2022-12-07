@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progressbar</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="progressbar">
+        <div class="progressbar-item active" data-value="1">
+          <span class="flex-center">1</span>
+        </div>
+        <div class="progressbar-item" data-value="2">
+          <span class="flex-center">2</span>
+        </div>
+        <div class="progressbar-item" data-value="3">
+          <span class="flex-center">3</span>
+        </div>
+        <div class="progressbar-item" data-value="4">
+          <span class="flex-center">4</span>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="items">
+          <div class="item active" data-item="1">
+            <form>
+              <input
+                class="form-input"
+                type="text"
+                name="firstName"
+                placeholder="Enter your First Name"
+                autocomplete="nope"
+              />
+              <input
+                class="form-input"
+                type="text"
+                name="lastName"
+                placeholder="Enter your Last Name"
+                autocomplete="nope"
+              />
+              <input
+                class="form-input"
+                type="number"
+                name="phone"
+                placeholder="Enter your Phone number"
+                autocomplete="nope"
+              />
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                autocomplete="nope"
+                placeholder="Enter your Email"
+              />
+            </form>
+          </div>
+
+          <div class="item" data-item="2">
+            <form>
+              <select class="form-select" id="countries" name="country">
+                <option value="">Choose your country</option>
+              </select>
+
+              <input
+                type="text"
+                name="passportNo"
+                class="form-input"
+                placeholder="Enter your passport No"
+              />
+            </form>
+          </div>
+
+          <div class="item" data-item="3">
+            <form>
+              <select class="form-select" id="cards" name="card">
+                <option value="">Choose your card</option>
+                <option value="visa">Visa</option>
+                <option value="master card">Master Card</option>
+              </select>
+
+              <div class="form-select__type" id="cardType">
+                <label for="types">Choose your card type:</label>
+                <select class="form-select" name="cardType">
+                  <option value="classic">Classic</option>
+                  <option value="premium">Premium</option>
+                </select>
+              </div>
+            </form>
+          </div>
+
+          <div class="item" data-item="4">
+            <div class="results-title">Check your data</div>
+            <div id="results" class="results"></div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button data-button="prev" class="button button-prev disabled">
+            Back
+          </button>
+          <button data-button="next" class="button button-next disabled">
+            Next
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="/scripts.js" type="module"></script>
+  </body>
+</html>
